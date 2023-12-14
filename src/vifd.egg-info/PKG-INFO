@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: vifd
+Version: 0.0.0
+Summary: A small python package for ml app
+Home-page: https://github.com/ragalahariakula/vehicle_insurance_fraud_detection
+Author: ragalahariakula
+Author-email: ragalahariakula24@gmail.com
+Project-URL: Bug Tracker, https://github.com/ragalahariakula/vehicle_insurance_fraud_detection/issues
+
+# vehicle_insurance_fraud_detection
+vifd
