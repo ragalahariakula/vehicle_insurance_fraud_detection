@@ -1,10 +1,11 @@
 from vifd.config.configuration import ConfigurationManager
 from vifd.components.data_validation import DataValidation
 from vifd import logger 
+from pathlib import Path
 
 STAGE_NAME= "Data Validation stage"
 
-class DataValidationTrainingPieline:
+class DataValidationTrainingPipeline:
     def __init__(self):
         pass
     def main(self):

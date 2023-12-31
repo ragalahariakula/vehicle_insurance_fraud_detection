@@ -356,3 +356,211 @@ x==========x]
 [2024-01-01 00:19:21,093: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-01-01 02:45:37,239: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:45:37,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:45:37,247: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:45:37,250: INFO: common: created directory at: artifacts]
+[2024-01-01 02:45:37,252: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:46:24,612: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:46:24,615: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:46:24,618: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:46:24,620: INFO: common: created directory at: artifacts]
+[2024-01-01 02:46:24,622: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:50:14,395: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:50:14,399: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:50:14,402: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:50:14,404: INFO: common: created directory at: artifacts]
+[2024-01-01 02:50:14,406: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:50:46,052: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:50:46,055: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:50:46,059: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:50:46,061: INFO: common: created directory at: artifacts]
+[2024-01-01 02:50:46,063: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:50:46,173: INFO: 732983346: Splited data into train and test sets]
+[2024-01-01 02:55:30,882: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:55:30,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:55:30,889: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:55:30,890: INFO: common: created directory at: artifacts]
+[2024-01-01 02:55:30,891: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:55:30,978: INFO: 3647971484: Splited data into train and test sets]
+[2024-01-01 02:55:37,310: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:55:37,313: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:55:37,317: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:55:37,318: INFO: common: created directory at: artifacts]
+[2024-01-01 02:55:37,320: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:55:37,415: INFO: 3647971484: Splited data into train and test sets]
+[2024-01-01 02:55:37,882: INFO: 3647971484: Balanced the training data]
+[2024-01-01 02:57:02,623: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:57:02,626: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:57:02,630: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:57:02,631: INFO: common: created directory at: artifacts]
+[2024-01-01 02:57:02,635: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 02:57:02,692: INFO: 3689143997: Splited data into train and test sets]
+[2024-01-01 02:57:02,891: INFO: 3689143997: Balanced the training data]
+[2024-01-01 02:59:30,731: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:59:30,735: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 02:59:30,739: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 02:59:30,740: INFO: common: created directory at: artifacts]
+[2024-01-01 02:59:30,741: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:00:10,311: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:00:10,314: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:00:10,317: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:00:10,319: INFO: common: created directory at: artifacts]
+[2024-01-01 03:00:10,320: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:02:34,007: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:02:34,010: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:02:34,012: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:02:34,014: INFO: common: created directory at: artifacts]
+[2024-01-01 03:02:34,015: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:02:52,073: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:02:52,077: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:02:52,080: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:02:52,082: INFO: common: created directory at: artifacts]
+[2024-01-01 03:02:52,083: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:02:52,302: INFO: 578451359: Data split and balanced successfully.]
+[2024-01-01 03:05:17,208: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:05:17,211: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:05:17,215: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:05:17,216: INFO: common: created directory at: artifacts]
+[2024-01-01 03:05:17,218: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:05:17,428: INFO: 578451359: Data split and balanced successfully.]
+[2024-01-01 03:08:54,166: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:08:54,166: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:08:54,175: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:08:54,175: INFO: common: created directory at: artifacts]
+[2024-01-01 03:08:54,175: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:08:54,392: INFO: 2594490729: Data split and balanced successfully.]
+[2024-01-01 03:09:58,019: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:09:58,019: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:09:58,027: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:09:58,029: INFO: common: created directory at: artifacts]
+[2024-01-01 03:09:58,031: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:09:58,226: INFO: 429273344: Data split and balanced successfully.]
+[2024-01-01 03:42:30,263: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-01 03:42:30,263: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-01 03:45:29,974: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-01 03:45:29,974: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-01 03:45:31,302: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-01 03:45:31,302: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:45:31,302: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:45:31,302: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:45:31,302: INFO: common: created directory at: artifacts]
+[2024-01-01 03:45:31,302: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-01 03:45:33,841: INFO: data_ingestion: artifacts/data_ingestion/data.zip download with following info: 
+Connection: close
+Content-Length: 68996
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e183ebd6a5b61282c4986b78d0fad9592ad3204a2291140e9b19adf0f43414c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FD72:07D9:D0FA2B:1023FF3:6591E804
+Accept-Ranges: bytes
+Date: Sun, 31 Dec 2023 22:15:33 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10244-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1704060932.367250,VS0,VE1414
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e233bcb8ca505f6d6bc646deedb65600bed5e60b
+Expires: Sun, 31 Dec 2023 22:20:33 GMT
+Source-Age: 0
+
+]
+[2024-01-01 03:45:33,857: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-01 03:45:33,857: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-01 03:45:33,857: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:45:33,857: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:45:33,857: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:45:33,857: INFO: common: created directory at: artifacts]
+[2024-01-01 03:45:33,857: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-01 03:45:33,889: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-01 03:45:33,889: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-01 03:45:33,904: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:45:33,904: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:45:33,904: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:45:33,904: INFO: common: created directory at: artifacts]
+[2024-01-01 03:45:33,904: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:45:33,904: ERROR: stage_03_data_transformation: An error occurred: 'DataTransformation' object has no attribute 'train_test_spliting']
+Traceback (most recent call last):
+  File "D:\vehicle_insurance_fraud_detection\src\vifd\pipeline\stage_03_data_transformation.py", line 21, in main
+    data_transformation.train_test_spliting()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataTransformation' object has no attribute 'train_test_spliting'
+[2024-01-01 03:45:33,904: ERROR: main: An error occurred: 'DataTransformation' object has no attribute 'train_test_spliting']
+Traceback (most recent call last):
+  File "D:\vehicle_insurance_fraud_detection\main.py", line 30, in <module>
+    data_transformation.main()
+  File "D:\vehicle_insurance_fraud_detection\src\vifd\pipeline\stage_03_data_transformation.py", line 27, in main
+    raise e
+  File "D:\vehicle_insurance_fraud_detection\src\vifd\pipeline\stage_03_data_transformation.py", line 21, in main
+    data_transformation.train_test_spliting()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataTransformation' object has no attribute 'train_test_spliting'
+[2024-01-01 03:46:47,963: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-01 03:46:47,963: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-01 03:46:49,236: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-01 03:46:49,236: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:46:49,236: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:46:49,236: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:46:49,236: INFO: common: created directory at: artifacts]
+[2024-01-01 03:46:49,236: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-01 03:46:50,009: INFO: data_ingestion: artifacts/data_ingestion/data.zip download with following info: 
+Connection: close
+Content-Length: 68996
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e183ebd6a5b61282c4986b78d0fad9592ad3204a2291140e9b19adf0f43414c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FD72:07D9:D0FA2B:1023FF3:6591E804
+Accept-Ranges: bytes
+Date: Sun, 31 Dec 2023 22:16:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10240-MAA
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1704061010.956068,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bfdeaa29832bb8dfb332fe3b462788357d0e8fd2
+Expires: Sun, 31 Dec 2023 22:21:49 GMT
+Source-Age: 77
+
+]
+[2024-01-01 03:46:50,021: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-01 03:46:50,021: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-01 03:46:50,021: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:46:50,021: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:46:50,021: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:46:50,021: INFO: common: created directory at: artifacts]
+[2024-01-01 03:46:50,028: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-01 03:46:50,044: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-01 03:46:50,060: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-01 03:46:50,060: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:46:50,060: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-01 03:46:50,060: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-01 03:46:50,060: INFO: common: created directory at: artifacts]
+[2024-01-01 03:46:50,060: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-01 03:46:50,496: INFO: data_transformation: Data split and balanced successfully.]
+[2024-01-01 03:46:50,496: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
