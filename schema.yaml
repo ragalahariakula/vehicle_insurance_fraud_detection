@@ -1,1 +1,27 @@
- key: val 
+COLUMNS:
+  months_as_customer: int64
+  policy_state: object
+  policy_csl: object
+  policy_deductable: int64
+  policy_annual_premium: float64
+  umbrella_limit: int64
+  incident_type: object
+  incident_severity: object
+  authorities_contacted: object
+  incident_state: object
+  incident_city: object
+  number_of_vehicles_involved: int64
+  bodily_injuries: int64
+  witnesses: int64
+  police_report_available: object
+  total_claim_amount: int64
+  injury_claim: int64
+  property_claim: int64
+  vehicle_claim: int64
+  auto_make: object
+  auto_model: object
+  auto_year: int64
+  fraud_reported: object
+
+TARGET_COLUMN:
+  name: fraud_reported
