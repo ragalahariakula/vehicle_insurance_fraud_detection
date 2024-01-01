@@ -34,16 +34,11 @@ class ModelTrainerConfig:
     model_name: str
 
 
-""" 
-
-
 @dataclass(frozen=True)
 class ModelEvaluationConfig:
     root_dir: Path
-    test_data_path: Path
+    X_test_data_path: Path
+    y_test_data_path: Path
     model_path: Path
-    all_params: dict
     metric_file_name: Path
-    target_column: str
     mlflow_uri: str
-    """
