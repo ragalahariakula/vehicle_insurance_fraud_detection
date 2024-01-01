@@ -2,7 +2,8 @@ from vifd.constants import *
 from vifd.utils.common import read_yaml, create_directories
 from vifd.entity.config_entity import (DataIngestionConfig,
                                        DataValidationConfig,
-                                       DataTransformationConfig) 
+                                       DataTransformationConfig,
+                                       ModelTrainerConfig) 
 
 class ConfigurationManager:
     def __init__(
@@ -58,3 +59,20 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            X_train_data_path=config.X_train_data_path,
+            y_train_data_path=config.y_train_data_path,
+            X_test_data_path=config.X_test_data_path,
+            y_test_data_path=config.y_test_data_path,
+            model_name=config.model_name
+        )
+
+        return model_trainer_config
+    

@@ -25,3 +25,13 @@ class DataTransformationTrainingPipeline:
         except Exception as e:
             logger.exception(f"An error occurred: {str(e)}")
             raise e
+        
+if __name__=='__main__':
+    try:
+        logger.info(f">>>>>>> stage {STAGE_NAME} started <<<<<<<<")
+        obj=DataTransformationTrainingPipeline()
+        obj.main()
+        logger.info(r">>>>>>>>> stage {} completed <<<<<<<<<\n=============x".format(STAGE_NAME))
+    except Exception as e:
+        logger.exception(e)
+        raise e
