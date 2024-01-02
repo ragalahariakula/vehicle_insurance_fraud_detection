@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Vehicle Insurance Fraud Detection</h1>
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('index') }}" method="post">
+
+            <!-- Policy State -->
+            <label for="policy_state">Policy State:</label>
+            <select name="policy_state" style="width: 350px">
+                <option value='OH'>OH</option>
+                <option value='IN'>IN</option>
+                <option value='IL'>IL</option>
+            </select>
+            <br>
+
+            <!-- Policy CSL -->
+            <label for="policy_csl">Policy CSL:</label>
+            <select name="policy_csl" style="width: 350px">
+                <option value='250/500'>250/500</option>
+                <option value='100/300'>100/300</option>
+                <option value='500/1000'>500/1000</option>
+            </select>
+            <br>
+
+            <!-- Incident Type -->
+            <label for="incident_type">Incident Type:</label>
+            <select name="incident_type" style="width: 350px">
+                <option value='Single Vehicle Collision'>Single Vehicle Collision</option>
+                <option value='Vehicle Theft'>Vehicle Theft</option>
+                <option value='Multi-vehicle Collision'>Multi-vehicle Collision</option>
+                <option value='Parked Car'>Parked Car</option>
+            </select>
+            <br>
+
+            <!-- Incident Severity -->
+            <label for="incident_severity">Incident Severity:</label>
+            <select name="incident_severity" style="width: 350px">
+                <option value='Major Damage'>Major Damage</option>
+                <option value='Minor Damage'>Minor Damage</option>
+                <option value='Total Loss'>Total Loss</option>
+                <option value='Trivial Damage'>Trivial Damage</option>
+            </select>
+            <br>
+
+            <!-- Authorities Contacted -->
+            <label for="authorities_contacted">Authorities Contacted:</label>
+            <select name="authorities_contacted" style="width: 350px">
+                <option value='Police'>Police</option>
+                <option value='Fire'>Fire</option>
+                <option value='Other'>Other</option>
+                <option value='Ambulance'>Ambulance</option>
+            </select>
+            <br>
+
+            <!-- Incident State -->
+            <label for="incident_state">Incident State:</label>
+            <select name="incident_state" style="width: 350px">
+                <option value='SC'>SC</option>
+                <option value='VA'>VA</option>
+                <option value='NY'>NY</option>
+                <option value='OH'>OH</option>
+                <option value='WV'>WV</option>
+                <option value='NC'>NC</option>
+                <option value='PA'>PA</option>
+            </select>
+            <br>
+
+            <!-- Incident City -->
+            <label for="incident_city">Incident City:</label>
+            <select name="incident_city" style="width: 350px">
+                <option value='Columbus'>Columbus</option>
+                <option value='Riverwood'>Riverwood</option>
+                <option value='Arlington'>Arlington</option>
+                <option value='Springfield'>Springfield</option>
+                <option value='Hillsdale'>Hillsdale</option>
+                <option value='Northbend'>Northbend</option>
+                <option value='Northbrook'>Northbrook</option>
+            </select>
+            <br>
+
+            <!-- Police Report Available -->
+            <label for="police_report_available">Police Report Available:</label>
+            <select name="police_report_available" style="width: 350px">
+                <option value='YES'>YES</option>
+                <option value='NO'>NO</option>
+            </select>
+            <br>
+
+            <!-- Auto Make -->
+            <label for="auto_make">Auto Make:</label>
+            <select name="auto_make" style="width: 350px">
+                <option value='Saab'>Saab</option>
+                <option value='Mercedes'>Mercedes</option>
+                <option value='Dodge'>Dodge</option>
+                <option value='Chevrolet'>Chevrolet</option>
+                <option value='Accura'>Accura</option>
+                <option value='Nissan'>Nissan</option>
+                <option value='Audi'>Audi</option>
+                <option value='Toyota'>Toyota</option>
+                <option value='Ford'>Ford</option>
+                <option value='Suburu'>Suburu</option>
+                <option value='BMW'>BMW</option>
+                <option value='Jeep'>Jeep</option>
+                <option value='Honda'>Honda</option>
+                <option value='Volkswagen'>Volkswagen</option>
+            </select>
+            <br>
+
+            <!-- Auto Model -->
+            <label for="auto_model">Auto Model:</label>
+            <select name="auto_model" style="width: 350px">
+                <option value='92x'>92x</option>
+                <option value='E400'>E400</option>
+                <option value='RAM'>RAM</option>
+                <option value='Tahoe'>Tahoe</option>
+                <option value='RSX'>RSX</option>
+                <option value='95'>95</option>
+                <option value='Pathfinder'>Pathfinder</option>
+                <option value='A5'>A5</option>
+                <option value='Camry'>Camry</option>
+                <option value='F150'>F150</option>
+                <option value='A3'>A3</option>
+                <option value='Highlander'>Highlander</option>
+                <option value='Neon'>Neon</option>
+                <option value='MDX'>MDX</option>
+                <option value='Maxima'>Maxima</option>
+                <option value='Legacy'>Legacy</option>
+                <option value='TL'>TL</option>
+                <option value='Impreza'>Impreza</option>
+                <option value='Forrestor'>Forrestor</option>
+                <option value='Escape'>Escape</option>
+                <option value='Corolla'>Corolla</option>
+                <option value='3 Series'>3 Series</option>
+                <option value='C300'>C300</option>
+                <option value='Wrangler'>Wrangler</option>
+                <option value='M5'>M5</option>
+                <option value='X5'>X5</option>
+                <option value='Civic'>Civic</option>
+                <option value='Passat'>Passat</option>
+                <option value='Silverado'>Silverado</option>
+                <option value='CRV'>CRV</option>
+                <option value='93'>93</option>
+                <option value='Accord'>Accord</option>
+                <option value='X6'>X6</option>
+                <option value='Malibu'>Malibu</option>
+                <option value='Fusion'>Fusion</option>
+                <option value='Jetta'>Jetta</option>
+                <option value='ML350'>ML350</option>
+                <option value='Ultima'>Ultima</option>
+                <option value='Grand Cherokee'>Grand Cherokee</option>
+            </select>
+            <br><br>
+
+            <!-- Other Numeric Input Fields -->
+            <label for="months_as_customer">Months as Customer:</label>
+            <input type="text" id="months_as_customer" name="months_as_customer"><br><br>
+
+            <label for="policy_deductable">Policy Deductible:</label>
+            <input type="text" id="policy_deductable" name="policy_deductable"><br><br>
+
+            <label for="policy_annual_premium">Policy Annual Premium:</label>
+            <input type="text" id="policy_annual_premium" name="policy_annual_premium"><br><br>
+
+            <label for="umbrella_limit">Umbrella Limit:</label>
+            <input type="text" id="umbrella_limit" name="umbrella_limit"><br><br>
+
+            <label for="number_of_vehicles_involved">Number of Vehicles Involved:</label>
+            <input type="text" id="number_of_vehicles_involved" name="number_of_vehicles_involved"><br><br>
+
+            <label for="bodily_injuries">Bodily Injuries:</label>
+            <input type="text" id="bodily_injuries" name="bodily_injuries"><br><br>
+
+            <label for="witnesses">Witnesses:</label>
+            <input type="text" id="witnesses" name="witnesses"><br><br>
+
+            <label for="total_claim_amount">Total Claim Amount:</label>
+            <input type="text" id="total_claim_amount" name="total_claim_amount"><br><br>
+
+            <label for="injury_claim">Injury Claim:</label>
+            <input type="text" id="injury_claim" name="injury_claim"><br><br>
+
+            <label for="property_claim">Property Claim:</label>
+            <input type="text" id="property_claim" name="property_claim"><br><br>
+
+            <label for="vehicle_claim">Vehicle Claim:</label>
+            <input type="text" id="vehicle_claim" name="vehicle_claim"><br><br>
+
+            <label for="auto_year">Auto Year:</label>
+            <input type="text" id="auto_year" name="auto_year"><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block btn-large">Detect</button>
+        </form>
+
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>

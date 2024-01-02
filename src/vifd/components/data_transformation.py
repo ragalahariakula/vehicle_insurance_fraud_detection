@@ -1,5 +1,5 @@
 import os
-from src.vifd import logger
+from vifd import logger
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
@@ -7,24 +7,41 @@ import pandas as pd
 import numpy as np
 from imblearn.over_sampling import SMOTENC
 from vifd.entity.config_entity import DataTransformationConfig
+import pickle
 
 class DataTransformation:
     def __init__(self, config):
         self.config = config
+        self.encoder_file = os.path.join(self.config.root_dir, 'encoder.pkl')
+        self.scaler_file = os.path.join(self.config.root_dir, 'scaler.pkl')
 
     def load_data(self):
         data = pd.read_csv(self.config.data_path)
         return data
+    
+    def encoder_ip_data_columns(self,data):
+        k=data.copy()
+        m = ['policy_state', 'policy_csl', 'incident_type',
+                                'incident_severity', 'authorities_contacted',
+                                'incident_state', 'incident_city',
+                                'police_report_available', 'auto_make', 'auto_model']
+        enc1 = OneHotEncoder(handle_unknown='ignore', drop='first')
+        cat_enc_ip_data = pd.DataFrame(enc1.fit_transform(k[m]).toarray())
+        cat_enc_ip_data.columns = enc1.get_feature_names_out()
+        
+        with open(self.encoder_file, 'wb') as encoder_file:
+            pickle.dump(enc1, encoder_file)
 
     def encode_categorical_columns(self, data):
         categorical_columns = ['policy_state', 'policy_csl', 'incident_type',
                                 'incident_severity', 'authorities_contacted',
                                 'incident_state', 'incident_city',
                                 'police_report_available', 'auto_make', 'auto_model', 'fraud_reported']
-
+        
         enc = OneHotEncoder(handle_unknown='ignore', drop='first')
         cat_enc_data = pd.DataFrame(enc.fit_transform(data[categorical_columns]).toarray())
         cat_enc_data.columns = enc.get_feature_names_out()
+            
         return cat_enc_data
 
     def preprocess_data(self, data, cat_enc_data):
@@ -43,6 +60,9 @@ class DataTransformation:
                                       columns=numerical_columns, index=X_train.index)
         X_test_scaled = pd.DataFrame(scaler.fit_transform(X_test[numerical_columns]),
                                      columns=numerical_columns, index=X_test.index)
+        
+        with open(self.scaler_file, 'wb') as scaler_file:
+            pickle.dump(scaler, scaler_file)
 
         for col in numerical_columns:
             X_train[col] = X_train_scaled[col]
@@ -63,6 +83,7 @@ class DataTransformation:
     def train_test_splitting(self):
         try:
             data = self.load_data()
+            self.encoder_ip_data_columns(data)
             cat_enc_data = self.encode_categorical_columns(data)
             df = self.preprocess_data(data, cat_enc_data)
 
