@@ -87,7 +87,9 @@ jobs:
          
       - name: Stop and remove container if running
         run: |
+          echo "Container ID: $(docker ps -q --filter "name=vifd")"
           docker ps -q --filter "name=vifd" | grep -q . && docker stop vifd && docker rm -fv vifd
+
        
       - name: Run Docker Image to serve users
         run: |
