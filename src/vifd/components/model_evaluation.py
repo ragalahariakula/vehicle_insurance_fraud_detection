@@ -27,6 +27,10 @@ class ModelEvaluation:
         mlflow.set_registry_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
+        os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/ragalahariakula/vehicle_insurance_fraud_detection.mlflow"
+        os.environ["MLFLOW_TRACKING_USERNAME"]="ragalahariakula"
+        os.environ["MLFLOW_TRACKING_PASSWORD"]="33d343356cb0b05950336782d39ca02d51a6f551"
+
         with mlflow.start_run():
             predicted_qualities = model.predict(X_test)
 

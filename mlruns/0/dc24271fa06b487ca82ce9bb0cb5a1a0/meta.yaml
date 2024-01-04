@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/vehicle_insurance_fraud_detection/mlruns/0/dc24271fa06b487ca82ce9bb0cb5a1a0/artifacts
+deleted_time: 1704382697306
 end_time: 1704244025000
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: dc24271fa06b487ca82ce9bb0cb5a1a0
 run_name: languid-horse-0
 run_uuid: dc24271fa06b487ca82ce9bb0cb5a1a0

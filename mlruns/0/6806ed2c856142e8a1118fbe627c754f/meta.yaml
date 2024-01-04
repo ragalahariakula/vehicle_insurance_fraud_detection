@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/vehicle_insurance_fraud_detection/mlruns/0/6806ed2c856142e8a1118fbe627c754f/artifacts
+deleted_time: 1704382697306
+end_time: 1704375903349
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 6806ed2c856142e8a1118fbe627c754f
+run_name: fortunate-moth-872
+run_uuid: 6806ed2c856142e8a1118fbe627c754f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704375895470
+status: 3
+tags: []
+user_id: Lahari

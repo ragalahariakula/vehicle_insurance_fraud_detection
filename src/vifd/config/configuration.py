@@ -89,7 +89,8 @@ class ConfigurationManager:
             model_path=config.model_path,
             metric_file_name=config.metric_file_name,
             mlflow_uri="https://dagshub.com/ragalahariakula/vehicle_insurance_fraud_detection.mlflow"
-            )
+
+        )
 
         return model_evaluation_config
     
