@@ -88,12 +88,12 @@ jobs:
      # - name: Stop and remove container if running
      #   run: |
      #     echo "Container ID: $(docker ps -q --filter "name=vifdre")"
-     #     docker ps -q --filter "name=vifdre" | grep -q . && docker stop vifdre && docker rm -fv vifdre
+     #     docker ps -q --filter "name=vifd" | grep -q . && docker stop vifd && docker rm -fv vifd
 
        
       - name: Run Docker Image to serve users
         run: |
-          docker run -d -p 8080:8080 --name=vifdre \
+          docker run -d -p 8080:8080 --name=vifd \
             -e 'AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}' \
             -e 'AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}' \
             -e 'AWS_REGION=${{ secrets.AWS_REGION }}' \
